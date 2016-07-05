@@ -56,4 +56,6 @@ var getEventList = function(response) {
         response.send(e);
     });
 }
-app.listen(3000);
+
+var port = parseInt(process.env.PORT, 10) || 3000;
+app.listen(port);
