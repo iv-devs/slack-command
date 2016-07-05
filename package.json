@@ -1,20 +1,23 @@
 {
-  "name": "slack-command",
-  "version": "1.0.0",
-  "description": "Personal Slash Command to Slack",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iv-devs/slack-command.git"
-  },
-  "author": "@iv_devs",
-  "bugs": {
-    "url": "https://github.com/iv-devs/slack-command/issues"
-  },
-  "homepage": "https://github.com/iv-devs/slack-command#readme",
-  "dependencies": {
-    "bl": "^1.1.2",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0"
-  }
+    "name": "slack-command",
+    "version": "1.0.0",
+    "description": "Personal Slash Command to Slack",
+    "main": "app.js",
+    "scripts": {
+        "start": "node ./app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iv-devs/slack-command.git"
+    },
+    "author": "@iv_devs",
+    "bugs": {
+        "url": "https://github.com/iv-devs/slack-command/issues"
+    },
+    "homepage": "https://github.com/iv-devs/slack-command#readme",
+    "dependencies": {
+        "bl": "^1.1.2",
+        "body-parser": "^1.15.2",
+        "express": "^4.14.0"
+    }
 }
