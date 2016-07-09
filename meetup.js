@@ -11,8 +11,8 @@ Meetup.prototype.list = function(callback) {
 Meetup.prototype.slackFormat = function(list) {
     $this = this;
 
-    var text = 'Proximos Meetups: <br/>';
-    text += '<ul>';
+    var text = 'Proximos Meetups: \n';
+
     list = list.results;
 
     for (var index in list) {
@@ -23,10 +23,9 @@ Meetup.prototype.slackFormat = function(list) {
         var eventDate = new Date(list[index].time);
         eventDate = eventDate.getDay() + '-' + eventDate.getMonth() + '-' + eventDate.getFullYear();
 
-        text += '<li>' + eventName + ' - ' + eventPlace + ' - ' + eventDate + ' <a href="' + link + '" >More info </a> </li>';
+        text += eventName + ' - ' + eventPlace + ' - ' + eventDate + ' More info: ' + link + ' \n';
     }
 
-    text += '</ul>';
     return text;
 };
 
