@@ -23,7 +23,7 @@ Meetup.prototype.slackFormat = function(list) {
         var eventDate = new Date(list[index].time);
         eventDate = eventDate.getDay() + '-' + eventDate.getMonth() + '-' + eventDate.getFullYear();
 
-        text += eventName + ' - ' + eventPlace + ' - ' + eventDate + ' More info: ' + link + ' \n';
+        text += eventName + ' - ' + eventPlace + ' - More info: ' + link + ' \n';
     }
 
     return text;
